@@ -10,6 +10,6 @@ instructions:
 3 things I would improve in my submission:
 1. I would use ElasticSearch and store the logs in it because it would be much more easy to analyze logs using ElasticSearch 
 2. in order to scale out and fulfill decoupling in the best way i would use data source such kafka which implements producer and consumer
-and then i would split between the service that listen to the exe output and writes to kafka and the service that reads from kafka and exposes http routes for getting the statistics.
+and then i would split between the service that listens to the exe output and writes to kafka and the service that reads from kafka and exposes http routes for getting the statistics.
 3. I would change the mutable map i used to immutable map in order to make my code more functional
 
