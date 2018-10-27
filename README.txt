@@ -1,16 +1,15 @@
 instructions:
-1. first clone the project to your computer
-2. open the project in inteliji
-3. setup the scala sdk to 2.11.8
-4. create Play2App configuration
-5. run the configuration
-6. in the browser play will run on http://localhost:9000
-7. for event types count go to http://localhost:9000/eventsCount
-8. for word count go to http://localhost:9000/wordsCount
+1. first clone the project to your computer using git clone
+2. open cmd in the project folder
+3. write sbt run and then press enter
+4. in the browser play will run on http://localhost:9000
+5. for event types count go to http://localhost:9000/eventsCount
+6. for word count go to http://localhost:9000/wordsCount
 
 
 3 things I would improve in my submission:
-1. I would use ElasticSearch and store the logs in it
-2. I would use Kafka instead of saving the data at Map in order to be able to deal with scaling
+1. I would use ElasticSearch and store the logs in it because it would be much more easy to analyze logs using ElasticSearch 
+2. in order to scale out and fulfil decoupling in the best way i would use data source such kafka which implements producer and consumer
+and then i would split the between the serivce that listen to the exe output and writes to kafka and the service that reads from kafka and give statistics.
 3. I would change the mutable map i used to immutable map in order to make my code more functional
 
