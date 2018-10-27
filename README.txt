@@ -11,6 +11,6 @@ instructions:
 
 3 things I would improve in my submission:
 1. I would use ElasticSearch and store the logs in it
-2. I would use Kafka instead of saving the data at Map
+2. I would use Kafka instead of saving the data at Map in order to be able to deal with scaling
 3. I would change the mutable map i used to immutable map in order to make my code more functional
 
