@@ -1,10 +1,12 @@
 instructions:
 1. first clone the project to your computer
 2. open the project in inteliji
-3. run with Play2App configuration
-3. in the browser play will run on http://localhost:9000
-4. for event types count go to http://localhost:9000/eventsCount
-5. for word count go to http://localhost:9000/wordsCount
+3. setup the scala sdk to 2.11.8
+4. create Play2App configuration
+5. run the configuration
+6. in the browser play will run on http://localhost:9000
+7. for event types count go to http://localhost:9000/eventsCount
+8. for word count go to http://localhost:9000/wordsCount
 
 
 3 things I would improve in my submission:
