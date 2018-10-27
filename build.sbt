@@ -1,7 +1,7 @@
 name := """play-scala-starter-example"""
 
 version := "1.0-SNAPSHOT"
-
+javaHome := sys.env.get("JAVA_HOME") map file
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 resolvers += Resolver.sonatypeRepo("snapshots")
